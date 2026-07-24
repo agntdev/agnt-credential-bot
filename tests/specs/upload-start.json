@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Upload CSV",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Begin CSV upload and validation process"
+            }
+          }
+        ],
+        "send": {
+          "callback": "upload:start"
+        }
+      }
+    ]
+  }
+]
